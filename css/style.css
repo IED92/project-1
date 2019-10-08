@@ -35,7 +35,6 @@ p {
 /* Layout */
 
 .container {
-    display: flex;
     padding: 0 2%;
     margin: 0 auto;
     width: 100%;
@@ -70,43 +69,52 @@ section {
 
 .site-header {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0.5rem 3rem 1rem 3rem;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+    padding: 1rem;
 }
 
-.logo img {
+.logo {
+    align-self: flex-start; 
     flex: 0 1 50%;
-    max-width: 160px;
+    order: -2;
 }
-
-/* Navigation menu */
+.logo img {
+    max-width: 120px;
+}
 
 .main-nav {
     align-self: center;
-    flex: 1 0 auto;
+    flex: 2 0 100%;
 }
 
-.main-nav ul{
+.main-nav ul {
+    border-top: 1px solid #d7d7d7;
+    padding-top: .5rem;
     text-align: center;
-    word-spacing: 2rem;
-    color: #e2574c;
-    text-decoration-line: none;
 }
 
 .main-nav li {
     display: inline-block;
-    flex-direction: row;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0 1rem;
 }
 
 .cart {
     cursor: pointer;
+    align-self: flex-end;
+    flex: 0 1 50%;
+    text-align: right;
+    width: 50px;
+    order: -1;
 }
 
-.cart img {
-    max-width: 62px;
+img {
+    height: auto;
+    max-width: 
 }
 
 /* Banner */
@@ -315,7 +323,35 @@ i {
     .season {
         font-size: 3rem;
     }
-
+    .site-header {
+        flex-wrap: nowrap;
+    }
+    .main-nav {
+        flex-basis: 60%;
+        order: 2;
+    }
+    .main-nav ul {
+        border-top: 0;
+        padding-top: 0;
+    }
+    .logo {
+        order: 1;
+        flex-basis: 20%;
+    }
+    .cart {
+        flex-basis: 20%;
+        order: 3;
+        width: 48px;
+    }
+    .logo img {
+        max-width: 120px;
+    }
+    .main nav {
+        font-size: .9rem;
+        margin: .5rem;
+        flex-basis: 60%;
+        order: 2;
+    }
 }
 
 @media only screen and (min-width: 1240px) {
@@ -324,13 +360,20 @@ i {
         height: 550px;
         position: relative;
     }
-
     .season {
         font-size: 4rem;
     }
-
-}
-
-@media only screen and (min-width: 480px) {
-
+    .site-header {
+        max-width: 1240px;
+    }
+    .cart {
+        width: 62px;
+    }
+    .logo img {
+        max-width: 160px;
+    }
+    .main-nav li {
+        font-size: 1rem;
+        margin: 1rem;
+    }
 }
