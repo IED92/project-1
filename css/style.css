@@ -45,7 +45,7 @@ section {
 }
 
 .products {
-    padding: 4rem 0rem 4rem 0rem;
+    padding: 0;
 }
 
 .category-wide {
@@ -177,6 +177,7 @@ h2 {
     font-family: 'Raleway Light';
     font-weight: lighter;
     max-width: 650px;
+    margin: 0 auto;
     font-size: 1.15rem;
     line-height: 2.5rem;
     word-wrap: break-word;
@@ -254,6 +255,21 @@ h2 {
     background-size: cover,cover;
 }
 
+/*Features*/
+
+.feature h2 {
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    font-weight: normal;
+    align-items: center;
+}
+
+.feature-container {
+    padding: 0%;
+}
+
 /* Footer */
 
 .footer {
@@ -277,7 +293,7 @@ h2 {
 
 .email a {
     font-family: 'Playfair Display Regular';
-    
+
 }
 
 .copyright, .contact {
