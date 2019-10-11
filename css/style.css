@@ -1,6 +1,7 @@
 /* Extra help and resets */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
   }
   *, *:before, *:after {
@@ -166,6 +167,12 @@ img {
 h2 {
     font-family: 'Playfair Display Italic';
     margin-bottom: 2rem;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    font-weight: normal;
+    align-items: center;
 }
 
 .style {
@@ -178,6 +185,7 @@ h2 {
     font-weight: lighter;
     max-width: 650px;
     margin: 0 auto;
+    margin-top: 1.5rem;
     font-size: 1.15rem;
     line-height: 2.5rem;
     word-wrap: break-word;
@@ -258,16 +266,18 @@ h2 {
 /*Features*/
 
 .feature h2 {
-    flex-direction: column;
-    text-align: center;
-    font-size: 2.5rem;
-    margin: 0 auto;
-    font-weight: normal;
-    align-items: center;
+    margin-bottom: 3rem;
+    min-width: 425px;
+    margin-left: -2rem;
 }
 
 .feature-container {
     padding: 0%;
+}
+
+.product-wrapper {
+  width: 100%;
+  text-align: center;
 }
 
 /* Footer */
@@ -304,11 +314,12 @@ h2 {
     color: #969696;
 }
 
-.socials p {
+.socials a {
     font-family: 'Raleway Light';
     line-height: 2;
     text-align: left;
     margin-right: 3.5rem;
+    font-weight: lighter;
 }
 
 i {
@@ -340,6 +351,9 @@ i {
     }
     .category-wide, .category-square {
         height: 25vw;
+    }
+    .feature {
+        word-wrap: nowrap;
     }
     .season {
         font-size: 3rem;
@@ -373,6 +387,17 @@ i {
         flex-basis: 60%;
         order: 2;
     }
+    .product-wrapper {
+    width: 25%;
+    }
+    .feature h2 {
+        margin-left: 0;
+    }
+
+    /*.category-square:nth-child(5), .category-wide:first-child {
+    border-left: 0;
+    border-right: 4px solid #fff;
+    }*/
 }
 
 @media only screen and (min-width: 1240px) {
