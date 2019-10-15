@@ -13,4 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
   	
 });
 
+document.getElementById("sign-up-form").addEventListener("submit", function() {
+	alert("Thank you for subscribing!");
+});
+
 }); // end of document
