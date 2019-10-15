@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
   	cellAlign: 'left',
   	wrapAround: true,
   	freeScroll: true
+  	
 });
 
 }); // end of document
