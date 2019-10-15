@@ -13,6 +13,13 @@ html {
 .screen-reader {
     visibility: hidden;
 }
+
+.product-list p {
+   color: #e2574c;
+    text-decoration: none;
+    font-family: 'Raleway Medium';
+    font-weight: 300; 
+}
 /* 
 h1, h2, h3 {
     
@@ -31,6 +38,13 @@ a:hover, a:focus {
 
 p {
     font-size: 1rem;
+}
+
+h3 {
+    color: #e2574c;
+    text-decoration: none;
+    font-family: 'Raleway Medium';
+    font-weight: 300;
 }
 
 /* Layout */
