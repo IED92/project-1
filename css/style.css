@@ -34,14 +34,14 @@ textarea {
     display: none;
 }
 
-
 h1,
 h2,
 h3 {
     font-family: 'Playfair Display Regular';
 }
 
-a, h3 {
+a,
+h3 {
     color: #e2574c;
     text-decoration: none;
     font-weight: 300;
@@ -93,7 +93,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 0.75rem;
+    padding: 0.75rem 0.75rem 0;
 }
 
 .logo {
@@ -307,25 +307,28 @@ h2 {
     text-transform: uppercase;
 }
 
-.product-type, .price {
+.product-type,
+.price {
     color: #969696;
 }
 
-.product-list p, .product-list h3,
+.product-list p,
+.product-list h3,
 .product-type {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .product-list h3 {
     font-family: 'Playfair Display Medium';
     font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .price {
     font-family: 'Raleway Medium';
 }
+
 
 /*Newsletter*/
 
@@ -338,10 +341,6 @@ h2 {
 .sign-up-wrapper {
     text-align: center;
     padding: 0 1rem;
-}
-
-.newsletter h2 {
-
 }
 
 .newsletter h2,
@@ -401,22 +400,15 @@ input[type=submit]:hover {
     background-color: #b64036;
 }
 
+
 /* Footer */
 
 .footer {
     background-color: #242424;
     color: #fff;
-    font-family: Playfair Display Web,serif;
+    font-family: Playfair Display Web, serif;
     padding: 4rem 0;
     text-align: center;
-    /*background-color: #242424;
-    color: #fff;
-    padding: 4rem 0;
-    text-align: left;
-    line-height: 1.5;
-    display: flex;
-    justify-content: space-between;
-    padding: 3em 3em;*/
 }
 
 .footer a {
@@ -443,7 +435,6 @@ input[type=submit]:hover {
 }
 
 .network span {
-    /*display: none;*/
     font-size: 0px;
 }
 
@@ -451,10 +442,6 @@ input[type=submit]:hover {
     display: inline-flex;
     margin: 1rem 0 0 1rem;
 }
-/*    text-align: left;
-    margin-right: 3.5rem;
-    font-weight: lighter;
-}*/
 
 i {
     margin-right: 1.25rem;
@@ -533,15 +520,16 @@ i {
         margin-left: 0;
     }
     .logo img {
-    max-width: 140px;
+        max-width: 140px;
     }
     #sign-up-form {
         margin: 0 auto;
         width: 38%;
     }
-    .product-list p, .product-list h3,
+    .product-list p,
+    .product-list h3,
     .product-type {
-        margin-left: 10px; 
+        margin-left: 10px;
     }
     .newsletter p {
         font-size: 1.15rem;
@@ -557,7 +545,7 @@ i {
     }
     .network span {
         font-family: 'Raleway Light';
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .socials {
         display: inline-block;
@@ -576,10 +564,11 @@ i {
         font-size: 4rem;
     }
     .site-header {
-        max-width: 1240px;
+        max-width: 100vw;
+        padding: 1rem;
     }
-    .cart {
-        width: 62px;
+    .cart img {
+        max-width: 75px;
     }
     .logo img {
         max-width: 160px;
@@ -587,6 +576,9 @@ i {
     .main-nav li {
         font-size: 1rem;
         margin: 1rem;
+    }
+    .newsletter {
+        background-size: 100vw;
     }
 }
 
@@ -597,4 +589,7 @@ h3:focus {
     color: #b64036;
 }
 
-
+.category-name a:hover,
+.category-name a:focus {
+    color: #ffffcc;
+}
